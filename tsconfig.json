@@ -21,6 +21,6 @@
       "@/*": ["./src/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "sub-components/dashboard/TasksPerformance.jsx", "sub-components/billing/BillingAddress.jsx", "sub-components/dashboard/Teams.jsx"],
   "exclude": ["node_modules"]
 }

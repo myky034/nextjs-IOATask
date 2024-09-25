@@ -9,10 +9,27 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "apexcharts": "^3.53.0",
+    "bootstrap": "^5.3.3",
     "next": "14.2.13",
     "nextjs-dashboard": "file:",
+    "node-sass": "^9.0.0",
+    "prism-react-renderer": "^2.4.0",
     "react": "^18",
-    "react-dom": "^18"
+    "react-apexcharts": "^1.4.1",
+    "react-bootstrap": "^2.10.4",
+    "react-bootstrap-icons": "^1.11.4",
+    "react-copy-to-clipboard": "^5.1.0",
+    "react-dom": "^18",
+    "react-dropzone": "^14.2.3",
+    "react-feather": "^2.0.10",
+    "react-responsive": "^10.0.0",
+    "react-syntax-highlighter": "^15.5.0",
+    "sass": "^1.79.3",
+    "sass-loader": "^16.0.2",
+    "simplebar": "^6.2.7",
+    "simplebar-react": "^3.2.6",
+    "uuid": "^10.0.0"
   },
   "devDependencies": {
     "@types/node": "^20",
