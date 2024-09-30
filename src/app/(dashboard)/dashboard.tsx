@@ -5,7 +5,7 @@ import Link from "next/link";
 import { Container, Col, Row } from "react-bootstrap";
 
 // import widget/custom components
-//import { StatRightTopIcon } from "widgets";
+import { StatRightTopIcon } from "../../../widgets";
 
 // import sub components
 import {
@@ -54,7 +54,7 @@ const DashBoard = () => {
                 xs={12}
                 className='mt-6'
                 key={index}>
-                {/* <StatRightTopIcon info={item} /> */}
+                <StatRightTopIcon info={item} />
               </Col>
             );
           })}
