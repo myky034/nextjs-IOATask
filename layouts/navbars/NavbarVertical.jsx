@@ -40,7 +40,7 @@ const NavbarVertical = (props) => {
       </li>
     );
   };
-  const CustomToggleLevel2 = ({ children, eventKey, icon }) => {
+  const CustomToggleLevel2 = ({ children, eventKey }) => {
     const { activeEventKey } = useContext(AccordionContext);
     const decoratedOnClick = useAccordionButton(eventKey, () =>
       console.log("totally custom!")
@@ -65,7 +65,7 @@ const NavbarVertical = (props) => {
       <Link
         href={item.link}
         className={`nav-link ${location === item.link ? "active" : ""}`}
-        onClick={(e) =>
+        onClick={() =>
           isMobile ? props.onClick(!props.showMenu) : props.showMenu
         }>
         {item.name}

@@ -21,6 +21,6 @@
       "@/*": ["./src/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "sub-components/dashboard/TasksPerformance.jsx", "sub-components/billing/BillingAddress.jsx", "sub-components/dashboard/Teams.jsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "sub-components/dashboard/TasksPerformance.jsx", "sub-components/billing/BillingAddress.jsx", "sub-components/dashboard/Teams.jsx", "routes/DashboardRoutes.js", "layouts/navbars/NavbarTop.jsx", "src/app/(dashboard)/changelog/page.jsx"],
   "exclude": ["node_modules"]
 }
