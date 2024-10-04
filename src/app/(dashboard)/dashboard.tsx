@@ -1,8 +1,9 @@
 "use client";
 // import node module libraries
-import { Fragment } from "react";
+import { Fragment, useState } from "react";
 import Link from "next/link";
-import { Container, Col, Row } from "react-bootstrap";
+import { Container, Col, Row, Button } from "react-bootstrap";
+import Popup  from "./components/popovers/popup";
 
 // import widget/custom components
 import { StatRightTopIcon } from "../../../widgets";
@@ -18,6 +19,15 @@ import {
 import ProjectsStatsData from "../../../data/dashboard/ProjectsStatsData";
 
 const DashBoard = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [currentProject, setCurrentProject] = useState(null);
+
+
+  const handleCreateProject = () => {
+    setCurrentProject(null); // Set null to indicate creating a new project
+    setIsModalOpen(true);
+  };
+
   return (
     <Fragment>
       <div className='bg-primary pt-10 pb-21'></div>
@@ -36,11 +46,11 @@ const DashBoard = () => {
                   <h3 className='mb-0  text-white'>Projects of Ky Vu</h3>
                 </div>
                 <div>
-                  <Link
-                    href='#'
-                    className='btn btn-white'>
+                  <Button
+                    className='btn btn-white'
+                    onClick={handleCreateProject}>
                     Create New Projects
-                  </Link>
+                  </Button>
                 </div>
               </div>
             </div>
@@ -59,6 +69,9 @@ const DashBoard = () => {
             );
           })}
         </Row>
+
+        <Popup isOpen={isModalOpen}
+          onClose={() => setIsModalOpen(false)} />
 
         {/* Active Projects  */}
         <ActiveProjects />
