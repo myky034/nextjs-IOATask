@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
-import "./globals.css";
+import "../../styles/theme.scss";
+//import "./globals.css";
 
 export const metadata: Metadata = {
   title: "Next JS IOATask",
@@ -12,10 +13,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body>
-        {children}
-      </body>
+    <html lang='en'>
+      <body className='bg-light'>{children}</body>
     </html>
   );
 }
